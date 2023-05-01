@@ -7,7 +7,7 @@ public class ConnectNum {
         int odd = 0;
         int even = 0;
 
-        for (int i = num_list.length; i >= 0; i--) {
+        for (int i = 0; i < num_list.length; i++) {
             if (num_list[i] % 2 == 0) {
                 even *= 10;
                 even += num_list[i];
