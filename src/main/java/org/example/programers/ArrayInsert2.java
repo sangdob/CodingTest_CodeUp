@@ -3,7 +3,7 @@ package org.example.programers;
 import java.util.*;
 
 public class ArrayInsert2 {
-    public static List<Integer> solution(int l, int r) {
+    public static int[] solution(int l, int r) {
         List<Integer> answer = new ArrayList<>();
 
         for (int i = l; i <= r; i++) {
@@ -22,10 +22,10 @@ public class ArrayInsert2 {
             }
         }
 
-        return answer.size() != 0 ? answer : new ArrayList<>(-1);
+        return answer.isEmpty() ? answer.stream().mapToInt(value -> value).toArray() : new int[]{-1};
     }
 
     public static void main(String[] args) {
-        solution(5, 555);
+        solution(10, 20);
     }
 }
