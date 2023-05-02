@@ -13,7 +13,7 @@ public class SequenceAndPointQuery4 {
             int k = queries[i][2];
 
             for (int j = s; j <= e; j++) {
-                if (arr[j] % k == 0) {
+                if (j % k == 0) {
                     answer[j]++;
                 }
             }
