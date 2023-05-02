@@ -8,16 +8,18 @@ public class SequenceAndPointQuery4 {
         int[] answer = Arrays.copyOf(arr, arr.length);
 
         for (int i = 0; i < queries.length; i++) {
+            int s = queries[i][0];
+            int e = queries[i][1];
             int k = queries[i][2];
 
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = s; j <= e; j++) {
                 if (arr[j] % k == 0) {
-                    arr[j]++;
+                    answer[j]++;
                 }
             }
         }
 
-        return arr;
+        return answer;
     }
 
     public static void main(String[] args) {
