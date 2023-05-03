@@ -1,4 +1,4 @@
-package org.example.upto200;
+package org.example.upto300;
 
 import java.util.Scanner;
 
